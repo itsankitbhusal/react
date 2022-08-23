@@ -9,11 +9,14 @@ const MovieList = ({ movie }) => {
             <div>
               <img
                 className="img"
-                src={movie.Poster}
+                src={
+                  movie.Poster !== "N/A"
+                    ? movie.Poster
+                    : "https://via.placeholder.com/400"
+                }
                 alt={`${movie.Title} ${movie.Year}`}
               />
-              <br />
-              <h4>{movie.Title}</h4>
+              <h4 className="movie-title">{movie.Title}</h4>
             </div>
           ))}
       </div>
