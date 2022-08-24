@@ -1,14 +1,11 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<>Homepage</>} />
-        <Route path="/about" element={<>About</>} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <div>This is a homepage</div> <br />
+      <Link to="/contact">Contact</Link> | <Link to="/about">About</Link>
+    </div>
   );
 };
 
