@@ -16,6 +16,7 @@ import {
   Button,
   HStack,
   useColorMode,
+  Switch,
 } from "@chakra-ui/react";
 
 const App = () => {
@@ -31,9 +32,8 @@ const App = () => {
                 <Text>Please fill all the fields below to place order. </Text>
               </VStack>
               <VStack>
-                <Button variant="outline" size="sm" onClick={toggleColorMode}>
-                  Theme
-                </Button>
+                <Heading size="sm">Theme</Heading>
+                <Switch size="lg" onChange={toggleColorMode}></Switch>
               </VStack>
             </HStack>
 
