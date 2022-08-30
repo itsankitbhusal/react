@@ -15,12 +15,9 @@ import {
   Checkbox,
   Button,
   HStack,
-  useColorMode,
-  Switch,
 } from "@chakra-ui/react";
 
 const Form = () => {
-  const { toggleColorMode } = useColorMode();
   return (
     <>
       <Container maxW="container.lg">
@@ -30,10 +27,6 @@ const Form = () => {
               <VStack spacing={2} marginBottom={4} align="center">
                 <Heading>Shipping Details</Heading>
                 <Text>Please fill all the fields below to place order. </Text>
-              </VStack>
-              <VStack>
-                <Heading size="sm">Theme</Heading>
-                <Switch size="lg" onChange={toggleColorMode}></Switch>
               </VStack>
             </HStack>
 
