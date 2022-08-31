@@ -1,35 +1,47 @@
 import React from "react";
 import {
+  Button,
   DrawerBody,
   DrawerOverlay,
   DrawerCloseButton,
   DrawerHeader,
-  HStack,
-  Button,
+  useDisclosure,
+  DrawerContent,
+  DrawerFooter,
 } from "@chakra-ui/react";
 
 const Drawer = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = React.useRef();
   return (
     <>
+      <Button ref={btnRef} colorScheme="teal" onClick={onOpen}>
+        Open
+      </Button>
       <Drawer
         isOpen={isOpen}
         placement="right"
         onClose={onClose}
         finalFocusRef={btnRef}
       >
-        <DrawerOverlay>
+        <DrawerOverlay />
+        <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Menu List</DrawerHeader>
+          <DrawerHeader>Create your account</DrawerHeader>
 
           <DrawerBody>
-            <HStack gap={2} display={["none", "none", "flex", "flex"]}>
-              <Button variant="ghost">Home</Button>
-              <Button variant="ghost">About</Button>
-
-              <Button variant="ghost">Contact</Button>
-            </HStack>
+            <Button>sdfsdf</Button>
+            <Button>sdfsdf</Button>
+            <Button>sdfsdf</Button>
           </DrawerBody>
-        </DrawerOverlay>
+
+          <DrawerFooter>
+            <Button variant="outline" mr={3} onClick={onClose}>
+              Cancel
+            </Button>
+            <Button colorScheme="blue">Save</Button>
+          </DrawerFooter>
+        </DrawerContent>
       </Drawer>
     </>
   );
