@@ -6,13 +6,23 @@ import {
   Box,
   useColorMode,
   IconButton,
+  // DrawerBody,
+  // DrawerOverlay,
+  // DrawerCloseButton,
+  // DrawerHeader,
+  // useDisclosure,
 } from "@chakra-ui/react";
+
 import React from "react";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Drawer from "./Drawer";
 
 const Nav = () => {
   const { toggleColorMode } = useColorMode();
+
+  // const { isOpen, onOpen, onClose } = useDisclosure();
+  // const btnRef = React.useRef();
 
   return (
     <>
@@ -58,6 +68,8 @@ const Nav = () => {
               size="lg"
               mr={2}
               icon={<GiHamburgerMenu />}
+              // ref={btnRef}
+              // onClick={onOpen}
             />
           </Flex>
         </Flex>
