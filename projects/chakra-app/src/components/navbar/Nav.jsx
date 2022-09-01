@@ -6,19 +6,20 @@ import {
   Box,
   useColorMode,
   IconButton,
+  Drawer,
   DrawerBody,
-  DrawerOverlay,
-  DrawerCloseButton,
   DrawerHeader,
-  useDisclosure,
+  DrawerOverlay,
   DrawerContent,
-  DrawerFooter,
+  DrawerCloseButton,
+  useDisclosure,
 } from "@chakra-ui/react";
 
 import React from "react";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Drawer from "./Drawer";
+import NavLinks from "./NavLinks";
+// import Drawer from "./Drawer";
 
 const Nav = () => {
   const { toggleColorMode } = useColorMode();
@@ -44,10 +45,7 @@ const Nav = () => {
 
           {/* Main Links  */}
           <HStack gap={2} display={["none", "none", "flex", "flex"]}>
-            <Button variant="ghost">Home</Button>
-            <Button variant="ghost">About</Button>
-
-            <Button variant="ghost">Contact</Button>
+            <NavLinks />
           </HStack>
 
           {/* toggle color mode */}
@@ -74,10 +72,9 @@ const Nav = () => {
 
             {/* hamburger icon */}
             <IconButton
-              ref={btnRef}
               icon={<GiHamburgerMenu />}
               onClick={onOpen}
-              // ref={btnRef}
+              ref={btnRef}
             />
 
             {/* Drawer Starts */}
@@ -90,21 +87,15 @@ const Nav = () => {
               <DrawerOverlay />
               <DrawerContent>
                 <DrawerCloseButton />
-                <DrawerHeader>Menu List</DrawerHeader>
+                <DrawerHeader>
+                  <Heading>Logo</Heading>
+                </DrawerHeader>
 
                 <DrawerBody>
-                  <HStack gap={2} display={["none", "none", "flex", "flex"]}>
-                    <Button variant="ghost">Home</Button>
-                    <Button variant="ghost">About</Button>
-                    <Button variant="ghost">Contact</Button>
-                  </HStack>
+                  <Flex direction="column" my={8}>
+                    <NavLinks />
+                  </Flex>
                 </DrawerBody>
-                <DrawerFooter>
-                  <Button variant="outline" mr={3} onClick={onClose}>
-                    Cancel
-                  </Button>
-                  <Button colorScheme="blue">Save</Button>
-                </DrawerFooter>
               </DrawerContent>
             </Drawer>
           </Flex>
