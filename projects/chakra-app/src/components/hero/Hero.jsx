@@ -14,8 +14,13 @@ import { FiPhone, FiDownload } from "react-icons/fi";
 const Hero = () => {
   return (
     <>
-      <Container maxW="100vw" my={4}>
-        <Flex align="center" justify="center" gap={4}>
+      <Container maxW="100vw" my={4} alignItems="center">
+        <Flex
+          height={["auto", "auto", "50vh", "70vh"]}
+          align="center"
+          justify="center"
+          gap={4}
+        >
           <VStack w="50vw" display={["none", "none", "flex", "flex"]}>
             <Img src={Image}></Img>
           </VStack>

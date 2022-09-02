@@ -1,4 +1,4 @@
-import { Flex, Container, Heading, Button, IconButton } from "@chakra-ui/react";
+import { Flex, Container, Heading, IconButton } from "@chakra-ui/react";
 import { SiExpress, SiReact, SiNodedotjs } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import React from "react";
@@ -6,11 +6,11 @@ import React from "react";
 const Current = () => {
   return (
     <Container
-      borderRadius={4}
       my="2rem"
       bg="green.400"
-      maxW={["auto", "90vw", "90vw", "90vw"]}
+      maxW="100vw"
       height={["25vh", "10vh", "10vh", "10vh"]}
+      px="5vw"
     >
       <Flex
         align="center"
