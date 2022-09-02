@@ -21,12 +21,14 @@ const Hero = () => {
             <Img src={Image}></Img>
           </VStack>
           <VStack w="50vw" gap={4}>
-            <Heading as="h1" size="4xl" noOfLines={2}>
-              Welcome to my{" "}
-              <Text as="span" color="green.400">
-                portfolio
-              </Text>{" "}
-              website
+            <Heading as="h1" size="4xl" alignSelf="flex-start" noOfLines={2}>
+              Hi! I Am{" "}
+              <Heading as="h1" size="4xl" color="green.400">
+                Ankit{" "}
+                <Text as="span" size="4xl" color="white">
+                  Bhusal
+                </Text>
+              </Heading>
             </Heading>
             <WrapItem
               //   alignSelf="flex-start"
