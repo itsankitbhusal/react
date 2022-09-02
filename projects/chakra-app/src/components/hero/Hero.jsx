@@ -24,10 +24,7 @@ const Hero = () => {
             <Heading as="h1" size="4xl" alignSelf="flex-start" noOfLines={2}>
               Hi! I Am{" "}
               <Heading as="h1" size="4xl" color="green.400">
-                Ankit{" "}
-                <Text as="span" size="4xl" color="white">
-                  Bhusal
-                </Text>
+                Ankit Bhusal
               </Heading>
             </Heading>
             <WrapItem
