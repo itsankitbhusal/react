@@ -1,4 +1,4 @@
-import { Flex, Container, Heading } from "@chakra-ui/react";
+import { Flex, Container, Heading, Button, IconButton } from "@chakra-ui/react";
 import { SiExpress, SiReact, SiNodedotjs } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import React from "react";
@@ -6,6 +6,8 @@ import React from "react";
 const Current = () => {
   return (
     <Container
+      borderRadius={4}
+      my="2rem"
       bg="green.400"
       maxW={["auto", "90vw", "90vw", "90vw"]}
       height={["25vh", "10vh", "10vh", "10vh"]}
@@ -20,11 +22,11 @@ const Current = () => {
         <Heading fontSize="4xl" fontWeight="bold">
           My Stack
         </Heading>
-        <Flex gap={8}>
-          <GrMysql size="2rem" />
-          <SiExpress size="2rem" />
-          <SiReact size="2rem" />
-          <SiNodedotjs size="2rem" />
+        <Flex gap={4}>
+          <IconButton aria-label="MySQL" size="lg" icon={<GrMysql />} />
+          <IconButton aria-label="Express" size="lg" icon={<SiExpress />} />
+          <IconButton aria-label="React" size="lg" icon={<SiReact />} />
+          <IconButton aria-label="Node" size="lg" icon={<SiNodedotjs />} />
         </Flex>
       </Flex>
     </Container>
