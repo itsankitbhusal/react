@@ -4,6 +4,7 @@ import Hero from "./components/hero/Hero";
 import Services from "./components/hero/services/Services";
 
 import Nav from "./components/navbar/Nav";
+import Recent from "./components/recent/Recent";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Hero />
       <Current />
       <Services />
+      <Recent />
     </>
   );
 };

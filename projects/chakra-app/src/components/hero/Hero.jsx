@@ -16,18 +16,29 @@ const Hero = () => {
     <>
       <Container maxW="100vw" my={4} alignItems="center">
         <Flex
-          height={["auto", "auto", "50vh", "70vh"]}
+          height={["auto", "auto", "50vh", "75vh"]}
           align="center"
           justify="center"
           gap={4}
         >
           <VStack w="50vw" display={["none", "none", "flex", "flex"]}>
-            <Img src={Image}></Img>
+            <Img src={Image} width="full"></Img>
           </VStack>
           <VStack w="50vw" gap={4}>
-            <Heading as="h1" size="4xl" alignSelf="flex-start" noOfLines={2}>
+            <Heading
+              as="h1"
+              // size="4xl"
+              fontSize={"6em"}
+              alignSelf="flex-start"
+              noOfLines={2}
+            >
               Hi! I Am{" "}
-              <Heading as="h1" size="4xl" color="green.400">
+              <Heading
+                as="h1"
+                // size="4xl"
+                fontSize={"1em"}
+                color="green.400"
+              >
                 Ankit Bhusal
               </Heading>
             </Heading>

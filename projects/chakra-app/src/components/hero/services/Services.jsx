@@ -37,7 +37,7 @@ const Services = () => {
                 services
               </Text>
             </Heading>
-            <Box alignSelf="flex-start" color="gray.600" py={4}>
+            <Box alignSelf="flex-start" py={4}>
               <Text py={1}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
                 laudantium ab molestiae soluta aut dignissimos?
