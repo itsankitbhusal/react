@@ -1,19 +1,28 @@
 import React from "react";
-import {
-  Stack,
-  IconButton,
-  HStack,
-  Text,
-  VStack,
-  Flex,
-} from "@chakra-ui/react";
+import { IconButton, HStack, Text, VStack, Flex } from "@chakra-ui/react";
 
 const ServiceCard = ({ name, icon }) => {
   return (
     <>
-      <Flex width="25vw">
+      <Flex
+        border="2px"
+        borderRadius="md"
+        borderColor="gray.100"
+        width="25vw"
+        p={2}
+        _hover={{
+          backgroundColor: "gray.100",
+          cursor: "pointer",
+        }}
+      >
         <HStack>
-          <IconButton alignSelf="flex-start" icon={icon} />
+          <IconButton
+            p="3rem"
+            fontSize="3.5rem"
+            variant="ghost"
+            alignSelf="flex-start"
+            icon={icon}
+          />
           <VStack>
             <Text as="h2" fontWeight="bold" alignSelf="flex-start">
               {name}
