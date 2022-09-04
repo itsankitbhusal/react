@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./components/footer/Footer";
 import Current from "./components/hero/Current";
 import Hero from "./components/hero/Hero";
 import Services from "./components/hero/services/Services";
@@ -15,6 +16,7 @@ const App = () => {
       <Current />
       <Services />
       <Recent />
+      <Footer />
     </>
   );
 };
