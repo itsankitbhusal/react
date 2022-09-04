@@ -18,7 +18,7 @@ import { FiDownload } from "react-icons/fi";
 const Services = () => {
   return (
     <>
-      <Container my="2rem" maxW={["100%", "100%", "70%", "70%"]}>
+      <Container my="10rem" maxW={["100%", "100%", "70%", "70%"]}>
         <Flex
           align="center"
           flexWrap={["wrap-reverse", "wrap-reverse", "nowrap", "nowrap"]}

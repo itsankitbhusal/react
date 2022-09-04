@@ -14,6 +14,7 @@ const ServiceCard = ({ name, icon }) => {
           backgroundColor: "gray.100",
           cursor: "pointer",
           color: "black",
+          transition: ".3s all",
         }}
       >
         <HStack>
