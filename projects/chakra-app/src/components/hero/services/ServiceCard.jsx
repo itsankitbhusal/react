@@ -13,6 +13,7 @@ const ServiceCard = ({ name, icon }) => {
         _hover={{
           backgroundColor: "gray.100",
           cursor: "pointer",
+          color: "black",
         }}
       >
         <HStack>
@@ -22,6 +23,7 @@ const ServiceCard = ({ name, icon }) => {
             variant="ghost"
             alignSelf="flex-start"
             icon={icon}
+            color="green.400"
           />
           <VStack>
             <Text as="h2" fontWeight="bold" alignSelf="flex-start">
