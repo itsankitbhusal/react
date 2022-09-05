@@ -16,20 +16,25 @@ const Hero = () => {
     <>
       <Container maxW="100vw" my={4} alignItems="center">
         <Flex
-          height={["auto", "auto", "50vh", "75vh"]}
+          height={["auto", "auto", "90vh", "90vh"]}
           align="center"
           gap={4}
           flexWrap={["wrap", "wrap", "nowrap", "nowrap"]}
         >
           <VStack
-            w={["100vw", "100vw", "30vw", "30vw"]}
+            w={["100vw", "100vw", "65vw", "50vw"]}
             // display={["none", "none", "flex", "flex"]}
           >
-            <Img src={Image} objectFit="cover"></Img>
+            <Img
+              boxSize={["600px", "700px", "700px", "700px"]}
+              src={Image}
+              objectFit="cover"
+            ></Img>
           </VStack>
           <VStack
+            textShadow="0 0 20px green"
             w={["100vw", "100vw", "70vw", "70vw"]}
-            marginTop={["-5rem", "-5rem", "0", "0"]}
+            marginTop={["-40vh", "-40vh", "0", "0"]}
             gap={4}
           >
             <Heading
@@ -37,7 +42,7 @@ const Hero = () => {
               align="center"
               as="h1"
               // size="4xl"
-              fontSize={["2em", "5em", "5em", "5em"]}
+              fontSize={["2em", "5em", "3em", "4em"]}
             >
               Hi! I Am{" "}
               <Heading as="h1" fontSize={"1.5em"} color="green.400">
