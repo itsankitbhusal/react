@@ -32,7 +32,7 @@ const Hero = () => {
             ></Img>
           </VStack>
           <VStack
-            textShadow="0 0 20px green"
+            textShadow="0 0 10px gray"
             w={["100vw", "100vw", "70vw", "70vw"]}
             marginTop={["-40vh", "-40vh", "0", "0"]}
             gap={4}

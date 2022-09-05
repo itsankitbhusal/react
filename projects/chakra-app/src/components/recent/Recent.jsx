@@ -21,7 +21,9 @@ const Recent = () => {
   return (
     <Container maxW="100%" my="10rem">
       <VStack justify="center">
-        <Heading size="4xl">Recent projects</Heading>
+        <Heading size="4xl" textAlign="center">
+          Recent projects
+        </Heading>
         <Flex py="2rem">
           <Container maxW="100%">
             <Flex flexWrap="wrap" justify="center" gap="1.5rem">
