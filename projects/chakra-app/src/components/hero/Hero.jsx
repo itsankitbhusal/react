@@ -44,7 +44,7 @@ const Hero = () => {
               // size="4xl"
               fontSize={["2em", "5em", "3em", "4em"]}
             >
-              Hi! I Am{" "}
+              Hi! I Am <br />
               <Heading as="span" fontSize={"1.5em"} color="green.400">
                 Ankit Bhusal
               </Heading>
