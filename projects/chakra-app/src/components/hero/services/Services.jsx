@@ -4,6 +4,7 @@ import {
   Container,
   Flex,
   Heading,
+  Spacer,
   Stack,
   Text,
   VStack,
@@ -27,7 +28,10 @@ const Services = () => {
         >
           <Stack width={"100vw"}>
             <ServiceCard name="Website Development" icon={<CgWebsite />} />
+            <Spacer />
             <ServiceCard name="Ui/Ux Design" icon={<FiFigma />} />
+            <Spacer />
+
             <ServiceCard name="Graphics Design" icon={<DiPhotoshop />} />
           </Stack>
 

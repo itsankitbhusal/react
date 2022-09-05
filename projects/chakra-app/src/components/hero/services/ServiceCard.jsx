@@ -8,8 +8,7 @@ const ServiceCard = ({ name, icon }) => {
         border="1px"
         borderRadius="md"
         borderColor="gray.100"
-        // width="25vw"
-        p={2}
+        p="1rem"
         _hover={{
           backgroundColor: "gray.100",
           cursor: "pointer",
