@@ -18,26 +18,32 @@ import { FiDownload } from "react-icons/fi";
 const Services = () => {
   return (
     <>
-      <Container my="10rem" maxW={["100%", "100%", "70%", "70%"]}>
+      <Container my="10rem" maxW="100%">
         <Flex
           align="center"
           flexWrap={["wrap-reverse", "wrap-reverse", "nowrap", "nowrap"]}
           gap="2rem"
+          mx={["0", "0", "5vw", "10vw"]}
         >
-          <Stack>
+          <Stack width={"100vw"}>
             <ServiceCard name="Website Development" icon={<CgWebsite />} />
             <ServiceCard name="Ui/Ux Design" icon={<FiFigma />} />
             <ServiceCard name="Graphics Design" icon={<DiPhotoshop />} />
           </Stack>
 
           <VStack>
-            <Heading as="h1" size="4xl" alignSelf="flex-start">
+            <Heading
+              as="h1"
+              size="4xl"
+              textAlign={["center", "center", "start", "start"]}
+            >
               My awesome{" "}
               <Text as="span" color="green.400">
                 services
               </Text>
             </Heading>
-            <Box alignSelf="flex-start" py={4}>
+
+            <Box alignSelf="flex-start" py={4} textAlign="justify">
               <Text py={1}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
                 laudantium ab molestiae soluta aut dignissimos?

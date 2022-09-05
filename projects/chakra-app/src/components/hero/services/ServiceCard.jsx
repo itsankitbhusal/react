@@ -5,10 +5,10 @@ const ServiceCard = ({ name, icon }) => {
   return (
     <>
       <Flex
-        border="2px"
+        border="1px"
         borderRadius="md"
         borderColor="gray.100"
-        width="25vw"
+        // width="25vw"
         p={2}
         _hover={{
           backgroundColor: "gray.100",
@@ -19,10 +19,9 @@ const ServiceCard = ({ name, icon }) => {
       >
         <HStack>
           <IconButton
-            p="3rem"
-            fontSize="3.5rem"
+            p="1rem"
+            fontSize="4rem"
             variant="ghost"
-            alignSelf="flex-start"
             icon={icon}
             color="green.400"
           />
@@ -30,7 +29,7 @@ const ServiceCard = ({ name, icon }) => {
             <Text as="h2" fontWeight="bold" alignSelf="flex-start">
               {name}
             </Text>
-            <Text fontSize=".7rem" fontWeight="normal">
+            <Text fontSize=".7em" fontWeight="normal" textAlign="justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
               non. Laboriosam eos quos obcaecati adipisci voluptatibus
               provident.
