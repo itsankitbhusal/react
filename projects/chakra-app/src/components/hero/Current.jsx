@@ -10,6 +10,7 @@ const Current = () => {
       bg="green.400"
       maxW="100vw"
       height={["25vh", "10vh", "10vh", "10vh"]}
+      mt="4rem"
       px="5vw"
     >
       <Flex
