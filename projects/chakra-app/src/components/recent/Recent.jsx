@@ -4,14 +4,14 @@ import React from "react";
 import RecentCard from "./RecentCard";
 
 const Recent = () => {
-  const [img, setImg] = useState({});
+  const [img, setImg] = useState([]);
 
   const fetchData = async () => {
-    const url = "https://picsum.photos/list";
+    const url = "https://picsum.photos/v2/list?page=5&&limit=12";
     const res = await fetch(url);
     const data = await res.json();
     if (data) {
-      setImg(data.slice(0, 9));
+      setImg(data);
     }
   };
 
@@ -27,9 +27,9 @@ const Recent = () => {
         <Flex py="2rem">
           <Container maxW="100%">
             <Flex flexWrap="wrap" justify="center" gap="1.5rem">
-              {/* {img.map((data) => {
-                console.log(data.post_url);
-              })} */}
+              {img.map((data) => {
+                return <RecentCard id={data.id} image={data.download_url} />;
+              })}
             </Flex>
           </Container>
         </Flex>

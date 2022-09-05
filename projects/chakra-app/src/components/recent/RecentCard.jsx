@@ -1,10 +1,12 @@
 import { Img } from "@chakra-ui/react";
 import React from "react";
 
-const RecentCard = ({ image, key }) => {
+const RecentCard = ({ image, id }) => {
   return (
     <Img
-      key={key}
+      objectFit="cover"
+      maxW={["300px", "300px", "300px", "400px"]}
+      key={id}
       src={image}
       borderRadius="4px"
       _hover={{
