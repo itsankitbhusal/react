@@ -6,6 +6,7 @@ import Services from "./components/hero/services/Services";
 
 import Nav from "./components/navbar/Nav";
 import Recent from "./components/recent/Recent";
+import SchrollToTop from "./components/SchrollToTop";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Services />
       <Recent />
       <Footer />
+      <SchrollToTop />
     </>
   );
 };
